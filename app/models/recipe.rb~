@@ -1,0 +1,4 @@
+class Recipe < ActiveRecord::Base
+  attr_accessible :ingredients, :instructions, :name
+  validates :ingredients, :length => { :maximum => 50 }
+end
